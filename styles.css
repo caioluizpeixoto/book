@@ -85,31 +85,6 @@ a {
 .hero {
     padding: 4rem 0 3rem;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    background: radial-gradient(circle at top, rgba(16, 185, 129, 0.05), transparent 70%);
-}
-
-.hero .container {
-    position: relative;
-    z-index: 1;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.falling-point {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(16, 185, 129, 0.6);
-    pointer-events: none;
 }
 
 .hero-title {
@@ -495,4 +470,108 @@ footer {
 footer p {
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+/* Notificação de Prova Social */
+.social-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 9999;
+    min-width: 280px;
+    max-width: 320px;
+    transition: all 0.4s ease;
+}
+
+.social-notification.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+}
+
+.social-notification.show {
+    animation: slideIn 0.4s ease forwards;
+}
+
+.social-notification.hide {
+    animation: slideOut 0.4s ease forwards;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+.notification-location {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.notification-action {
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+    .social-notification {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        min-width: auto;
+        max-width: none;
+    }
 }
