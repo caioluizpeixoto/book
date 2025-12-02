@@ -23,12 +23,11 @@
         document.head.appendChild(a);
     </script>
     <!-- Meta Pixel Code -->
-    <!-- Meta Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -44,7 +43,6 @@
     <!-- End Meta Pixel Code -->
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1103917464539046&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,6 +56,17 @@
 </head>
 
 <body>
+    <!-- Faixa de Urgência - Letreiro -->
+    <div class="urgency-banner">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>⚡ OFERTA POR TEMPO LIMITADO! Garanta agora com desconto especial ⚡&nbsp;&nbsp;&nbsp;</span>
+                <span>⚡ OFERTA POR TEMPO LIMITADO! Garanta agora com desconto especial ⚡&nbsp;&nbsp;&nbsp;</span>
+                <span>⚡ OFERTA POR TEMPO LIMITADO! Garanta agora com desconto especial ⚡&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -71,26 +80,38 @@
             <img src="assets/hero_new.png" alt="Livros Digitais" class="hero-img">
 
             <div class="cta-wrapper">
-                <a href="#offer" class="cta-button pulse">EU QUERO!</a>
+                <a href="https://pay.lowify.com.br/checkout?product_id=LgGwEn" class="cta-button pulse">EU QUERO!</a>
             </div>
         </div>
     </section>
 
-    <!-- Books Section with Descriptions -->
+    <!-- Books Section 3D -->
     <section class="books-section">
         <div class="container">
+            <p
+                style="text-align: center; font-size: 1.1rem; font-weight: 600; margin-bottom: 2rem; color: var(--text-main);">
+                ✨ Arraste para girar os livros ✨
+            </p>
             <div class="cost-benefit-grid">
                 <!-- Card 1 -->
-                <div class="book-card">
-                    <img src="assets/book_1.png" alt="O Poder do Hábito" class="book-cover">
+                <div class="book-card-3d">
+                    <div class="book-3d-scene">
+                        <div class="book-3d">
+                            <img src="assets/book_1.png" alt="Livro" class="book-cover-3d">
+                        </div>
+                    </div>
                     <p class="book-category">FINANÇAS:</p>
                     <p class="book-description">Domine a psicologia do dinheiro e aprenda a gerir suas finanças com
                         inteligência para alcançar a estabilidade e o sucesso financeiro.</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="book-card">
-                    <img src="assets/book_2.png" alt="Pai Rico Pai Pobre" class="book-cover">
+                <div class="book-card-3d">
+                    <div class="book-3d-scene">
+                        <div class="book-3d">
+                            <img src="assets/book_2.png" alt="Livro" class="book-cover-3d">
+                        </div>
+                    </div>
                     <p class="book-category">INVESTIMENTOS:</p>
                     <p class="book-description">Explore diversas modalidades de investimentos, da renda fixa à variável,
                         além de insights valiosos sobre empreendedorismo para tomar decisões financeiras mais acertadas.
@@ -98,16 +119,24 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="book-card">
-                    <img src="assets/book_3.png" alt="É Assim que Acaba" class="book-cover">
+                <div class="book-card-3d">
+                    <div class="book-3d-scene">
+                        <div class="book-3d">
+                            <img src="assets/book_3.png" alt="Livro" class="book-cover-3d">
+                        </div>
+                    </div>
                     <p class="book-category">CARREIRA:</p>
                     <p class="book-description">Aprenda com Stephen Covey sobre proatividade e responsabilidade pessoal
                         para alcançar novos patamares na sua carreira.</p>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="book-card">
-                    <img src="assets/book_4.png" alt="As 48 Leis do Poder" class="book-cover">
+                <div class="book-card-3d">
+                    <div class="book-3d-scene">
+                        <div class="book-3d">
+                            <img src="assets/book_4.png" alt="Livro" class="book-cover-3d">
+                        </div>
+                    </div>
                     <p class="book-category">MENTALIDADE:</p>
                     <p class="book-description">Descubra como moldar uma mentalidade de sucesso com livros que inspiram
                         e motivam, como "Quem Pensa Enriquece".</p>
@@ -183,7 +212,7 @@
             </div>
 
             <div class="benefits-cta">
-                <a href="#offer" class="cta-button pulse">EU QUERO!</a>
+                <a href="https://pay.lowify.com.br/checkout?product_id=LgGwEn" class="cta-button pulse">EU QUERO!</a>
             </div>
         </div>
     </section>
@@ -262,93 +291,8 @@
         </div>
     </div>
 
-    <script>
-        // Sistema de Notificações de Prova Social
-        const customers = [
-            { name: 'Ana Silva', city: 'São Paulo', state: 'SP' },
-            { name: 'Carlos Oliveira', city: 'Rio de Janeiro', state: 'RJ' },
-            { name: 'Mariana Santos', city: 'Belo Horizonte', state: 'MG' },
-            { name: 'Pedro Costa', city: 'Brasília', state: 'DF' },
-            { name: 'Juliana Ferreira', city: 'Curitiba', state: 'PR' },
-            { name: 'Rafael Souza', city: 'Porto Alegre', state: 'RS' },
-            { name: 'Camila Lima', city: 'Salvador', state: 'BA' },
-            { name: 'Lucas Alves', city: 'Fortaleza', state: 'CE' },
-            { name: 'Patrícia Ribeiro', city: 'Recife', state: 'PE' },
-            { name: 'Bruno Martins', city: 'Manaus', state: 'AM' },
-            { name: 'Fernanda Rocha', city: 'Belém', state: 'PA' },
-            { name: 'Gustavo Pereira', city: 'Goiânia', state: 'GO' },
-            { name: 'Beatriz Carvalho', city: 'Campinas', state: 'SP' },
-            { name: 'Thiago Araújo', city: 'São Luís', state: 'MA' },
-            { name: 'Amanda Dias', city: 'Natal', state: 'RN' },
-            { name: 'Felipe Rodrigues', city: 'Teresina', state: 'PI' },
-            { name: 'Larissa Gomes', city: 'Maceió', state: 'AL' },
-            { name: 'Rodrigo Barbosa', city: 'João Pessoa', state: 'PB' },
-            { name: 'Gabriela Nascimento', city: 'Aracaju', state: 'SE' },
-            { name: 'Vinícius Azevedo', city: 'Florianópolis', state: 'SC' },
-            { name: 'Carolina Melo', city: 'Vitória', state: 'ES' },
-            { name: 'Henrique Castro', city: 'Cuiabá', state: 'MT' },
-            { name: 'Isabela Moreira', city: 'Campo Grande', state: 'MS' },
-            { name: 'Diego Freitas', city: 'Porto Velho', state: 'RO' },
-            { name: 'Renata Cardoso', city: 'Boa Vista', state: 'RR' },
-            { name: 'Marcelo Teixeira', city: 'Macapá', state: 'AP' },
-            { name: 'Paula Monteiro', city: 'Palmas', state: 'TO' },
-            { name: 'Eduardo Pinto', city: 'Rio Branco', state: 'AC' },
-            { name: 'Aline Correia', city: 'Santos', state: 'SP' },
-            { name: 'Ricardo Farias', city: 'Niterói', state: 'RJ' },
-            { name: 'Tatiana Mendes', city: 'Uberlândia', state: 'MG' },
-            { name: 'Fábio Lopes', city: 'Sorocaba', state: 'SP' },
-            { name: 'Vanessa Duarte', city: 'Londrina', state: 'PR' },
-            { name: 'André Barros', city: 'Joinville', state: 'SC' },
-            { name: 'Priscila Ramos', city: 'Caxias do Sul', state: 'RS' },
-            { name: 'Leandro Cavalcanti', city: 'Feira de Santana', state: 'BA' },
-            { name: 'Daniela Pires', city: 'Juiz de Fora', state: 'MG' },
-            { name: 'Maurício Cunha', city: 'São José dos Campos', state: 'SP' },
-            { name: 'Cristina Vieira', city: 'Ribeirão Preto', state: 'SP' },
-            { name: 'Alexandre Silva', city: 'Osasco', state: 'SP' },
-            { name: 'Simone Almeida', city: 'Santo André', state: 'SP' },
-            { name: 'Roberto Xavier', city: 'São Bernardo', state: 'SP' },
-            { name: 'Mônica Campos', city: 'Guarulhos', state: 'SP' },
-            { name: 'César Machado', city: 'Campina Grande', state: 'PB' },
-            { name: 'Luciana Torres', city: 'Petrolina', state: 'PE' },
-            { name: 'Fernando Nunes', city: 'Imperatriz', state: 'MA' },
-            { name: 'Adriana Moura', city: 'Maringá', state: 'PR' },
-            { name: 'Pablo Santana', city: 'Blumenau', state: 'SC' },
-            { name: 'Bianca Fonseca', city: 'Pelotas', state: 'RS' },
-            { name: 'Sérgio Rangel', city: 'Ilhéus', state: 'BA' }
-        ];
-
-        function showNotification() {
-            const notification = document.getElementById('social-proof-notification');
-            const randomCustomer = customers[Math.floor(Math.random() * customers.length)];
-
-            // Atualizar conteúdo
-            notification.querySelector('.notification-name').textContent = randomCustomer.name;
-            notification.querySelector('.notification-location').textContent = `${randomCustomer.city} - ${randomCustomer.state}`;
-
-            // Mostrar notificação
-            notification.classList.remove('hidden');
-            notification.classList.add('show');
-
-            // Esconder após 3 segundos
-            setTimeout(() => {
-                notification.classList.remove('show');
-                notification.classList.add('hide');
-
-                // Remover classe hide após animação
-                setTimeout(() => {
-                    notification.classList.add('hidden');
-                    notification.classList.remove('hide');
-                }, 400);
-            }, 3000);
-        }
-
-        // Iniciar ciclo de notificações após 30 segundos
-        setTimeout(() => {
-            showNotification();
-            // Repetir a cada 30 segundos
-            setInterval(showNotification, 30000);
-        }, 30000);
-    </script>
+    <!-- Script de Notificações + Livros 3D -->
+    <script src="book3d.js"></script>
 
 </body>
 
