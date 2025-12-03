@@ -135,8 +135,45 @@ a {
 .hero-title {
     font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #000;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.subtitle-intro {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+
+.benefits-list li:last-child {
+    margin-bottom: 0;
 }
 
 .hero-img {
@@ -145,8 +182,31 @@ a {
     border-radius: var(--radius-lg);
 }
 
+.hero-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.price-strikethrough {
+    text-decoration: line-through;
+    color: #DC2626;
+    font-size: 1.1rem;
+}
+
+.price-highlight {
+    color: var(--primary-dark);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
 .cta-wrapper {
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
 }
 
